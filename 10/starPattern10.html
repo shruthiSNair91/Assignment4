@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Pattern </title>
+    <style>
+         #DispBox{
+             background-color:peachpuff;
+        border: 3px solid darkblue;
+        padding:25px;
+        margin: 5% 20%;
+    }
+    #show,#reset{ padding: 8px;
+        border: 2px solid black;
+        margin-top: 25px;
+        height: 45px;
+        width: 85px;}
+        #show{margin-left: 25px;}
+        h2{
+            text-align: center;
+        }
+        #PatternDisp{
+        font-family:cursive;
+        font-weight: bold;
+        font-size: x-large;
+        color: teal;
+        }
+        #patStyle{
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="DispBox">
+        <h2>10. Star printing Pattern</h2>
+        <button id="reset" onclick="reset();">Reset</button>
+        <button id="show">Pattern</button><br><br>
+        <div id="patStyle"><span id="PatternDisp"></span></div>
+    </div>
+    <script src="starPattern.js"></script>
+    
+</body>
+</html>

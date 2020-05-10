@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Larger</title>
+    <style>
+        #DispBox{
+            background-color: beige;
+        border: 3px solid darkblue;
+        padding:25px;
+        margin: 5% 20%;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 5%;
+        }
+        input{
+        border-width: 4px;
+        padding: 10px;
+        font: bold;
+        width: 25%;
+        height: 40%;
+    }
+    label{
+        font-size: 22px;
+          font-weight: bold;
+          }
+    button{
+        padding: 8px;
+        border: 2px solid black;
+        margin-top: 25px;
+        height: 45px;
+        width: 85px;
+        font-weight: bold;
+        font-size: large;
+        }
+        #find{margin-left: 25px;}
+        #result{
+        font-family: cursive;
+        font-weight: bold;
+        font-size: x-large;
+        margin-left: 27%;
+          }
+    </style>
+</head>
+<body>
+    <div id="DispBox">
+        <h2>07. Finding larger one from given two integers </h2>
+        <label>Enter first integer</label>&nbsp;&nbsp;
+        <input id="integer1" type="number"></input><br>
+
+        <label>Enter Second integer</label>&nbsp;&nbsp;
+        <input id="integer2" type="number"></input><br>
+        <button id="reset" onclick="reset();">Reset</button>
+        <button id="find">Find</button><br>
+        <span id="result"></span>
+    </div>
+    
+   <script src="findLarge.js"></script> 
+</body>
+</html>

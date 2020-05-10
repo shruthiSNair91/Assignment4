@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Or Not</title>
+    <style type="text/CSS">
+    #DispBox{
+        background-color: lightgrey;
+        border: 3px solid darkblue;
+        padding:25px;
+        margin: 5% 20%;
+    }
+    input{
+        border-width: 4px;
+        padding: 10px;
+        font: bold;
+        width: 30%;
+        height: 40%;
+    }
+    label{font-size: 22px;
+          font-weight: bold;}
+    #Show,#reset{ padding: 8px;
+        border: 2px solid black;
+        margin-top: 25px;
+        height: 45px;
+        width: 85px;}
+        #Show{margin-left: 25px;}
+    #Pnot{
+        font-family: cursive;
+        font-weight: bold;
+        font-size: larger;
+        margin-left: 27%;
+          }
+          h2{
+              text-align: center;
+              margin-bottom: 5%;
+          }
+    </style>
+</head>
+
+<body>
+    <div id="DispBox">
+        <h2>01. First Array Element is Prime or Not</h2><br>
+        <label>Enter Array Elements:</label>&nbsp; 
+        <input id="numArray" type="text" placeholder="put comma(,)after each number"></input><br><br>
+        <button id="reset"  style="visibility: visible;" onclick="reset();">Reset</button>
+        <button id="Show" style="visibility: visible;" onclick="PrimeOrNot();">Show</button>
+       
+        <p id="Pnot"></p>
+     </div>
+   <script src="primeornot.js"></script>
+    
+</body>
+</html>

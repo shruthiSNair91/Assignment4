@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabetical Ordering</title>
+    <style>
+         #DispBox{
+            background-color: lightgrey;
+        border: 3px solid darkblue;
+        padding:25px;
+        margin: 5% 20%;
+    }
+    h2{
+        margin-bottom: 5%;
+        text-align: center;
+            }
+    input{
+        border-width: 4px;
+        padding: 10px;
+        font: bold;
+        width: 30%;
+        height: 40%;
+    }
+    label{font-size: 22px;
+          font-weight: bold;}
+    #show,#reset{ padding: 8px;
+        border: 2px solid black;
+        margin-top: 25px;
+        height: 45px;
+        width: 85px;}
+        #show{margin-left: 25px;}
+    #result{
+        font-family: cursive;
+        font-weight: bold;
+        font-size: larger;
+        margin-left: 27%;
+          }
+    </style>
+</head>
+<body>
+    <div id="DispBox">
+        <h2>08. Ordering the entered array Alphabetically</h2>
+    <label>Enter The Array : </label>
+    <input id="arrRead" type="text" placeholder="write strings in double quotes and put , after each string"></input><br>
+    <button id="reset" onclick="reset();">Reset</button>
+    <button id="show" onclick="AlphaOrder();">Show</button>
+    <div id="result"></div>
+    </div>
+    <script src="alphaOrder.js"></script>    
+</body>
+</html>

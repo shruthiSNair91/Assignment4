@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Squares of Array Elememts</title>
+    <style>
+    #DispBox
+     {
+        background-color: lightgrey;
+        border: 3px solid darkblue;
+        padding:25px;
+        margin: 5% 20%;
+     }  
+    input{
+        border-width: 4px;
+        padding: 10px;
+        font: bold;
+        width: 50%;
+        height: 40%;
+    }
+    label{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    #sum,#reset{
+        padding: 8px;
+        border: 2px solid black;
+        margin-top: 25px;
+        height: 45px;
+        width: 85px;
+        }
+        #sum{margin-left: 25px;}
+     #result{
+        font-family: cursive;
+        font-weight: bold;
+        font-size: x-large;
+       margin-left: 27%;
+       color: lightseagreen;
+     }   
+    </style>
+</head>
+<body>
+    <div id="DispBox">
+        <h2>04. Sum of Squares of Array Elements</h2><br>
+        <label>Enter Array Elements:</label>&nbsp; 
+        <input id="numArray" type="text" placeholder="put comma(,)after each number"></input><br><br>
+        <button id="reset"  style="visibility: visible;" onclick="reset();">Reset</button>
+        <button id="sum" style="visibility: visible;" >Sum</button><br>
+        <span  id="result"></span>
+     </div>
+   <script src="squareSum.js"></script> 
+</body>
+</html>

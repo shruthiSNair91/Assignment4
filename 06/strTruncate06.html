@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Truncate</title>
+    <style>
+     #DispBox{
+         background-color:lightgrey;
+        border: 3px solid darkblue;
+        padding:25px;
+        margin: 5% 20%;
+    }
+    h2
+    {
+        margin-bottom: 5%;
+        text-align: center;
+        font-size: x-large;
+    }
+    #DispBox2{margin-top: 10px;}
+    #strinput,#charinput{
+        border-width: 4px;
+        padding: 10px;
+        font: bold;
+        width: 50%;
+        height: 40%;
+    }
+    label{font-size: 22px;
+          font-weight: bold;}
+    #result{font-family: cursive;
+        font-weight: bold;
+        font-size: larger;
+        margin-left: 27%;
+          }
+     #truncate,#Reset{ 
+         font-size: medium;
+         font-weight: bold;
+         padding: 8px;
+        border: 2px solid black;
+        margin-top: 25px;
+        height: 45px;
+        width: 85px;}
+    #truncate{margin-left: 25px;}
+    
+    </style>
+</head>
+<body>
+    <div id="DispBox">
+        <h2>06. Truncate a string if longer than specified number of character</h2>
+        <label>Enter the String :</label>
+        <input id="strinput" type="text"></input><br>
+        <div id="DispBox2">
+        <label>Enter number of characters :</label>
+        <input id="charinput" type="number"></input><br> 
+       </div>
+        <button id="Reset" style="visibility: visible;" onclick="reset();">Reset</button>
+        <button id="truncate" style="visibility: visible;" onclick="strtruncate();">Truncate</button><br>
+       
+        <span id="result"></span>
+    </div>
+    <script src="strTruncate.js"></script>
+    
+</body>
+</html>
